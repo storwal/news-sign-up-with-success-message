@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+body{
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(234, 29%, 20%);
+  width: 100%;
+}
+.mobImg img{
+  display: none;
+}
+.containerBlock{
+  display: flex;
+  max-width: 900px;
+  background-color: #fff;
+  margin-left: 18.5%;
+  margin-top: 15%;
+  padding: 30px;
+  border-radius: 35px;
+  position: relative;
+}
+.stay-updated h1{
+  font-size: 50px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-left: 20px;
+}
+.stay-updated p{
+  margin-left: 20px;
+  margin-right: 4px;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 25px;
+}
+.ol{
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.ol img{
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+.ol p{
+  margin-left: 25px;
+  margin-top: 18px;
+}
+.ol-p{
+  margin-top: -107px;
+}
+.email{
+  margin-left: 20px;
+  margin-top: 45px;
+  
+}
+.email p{
+  font-size: 12px;
+  font-weight: 700;
+}
+#emailError h1{
+  font-size: 12px;
+  font-weight: 700; 
+  margin-left: 190px;
+  margin-top: -15px;
+  color: red;
+  
+}
+#emailError{
+  display: none;
+}
+.email input{
+margin-top: 10px;
+width: 300px;
+height: 50px;  
+border-radius: 10px;
+border: 1px solid gray;
+padding-left: 20px;
+}
+.sub button{
+width: 300px;
+height: 50px;
+margin-top: 25px;
+margin-left: 20px;
+border-radius: 10px;
+font-size: 15px;
+font-weight: 700;
+color: #fff;
+background-color: hsl(235, 18%, 26%);
+border: none;
+}
+.signUp{
+  border: 1px solid gray;
+  position: absolute;
+  background-color: #fff;
+  left: 460px;
+  top: 300px;
+  width: 500px;
+  padding: 50px 0px 50px 50px;
+  border-radius: 35px;
+  display: none;
+}
+.signUp h1{
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: 700;
+ 
+}
+.signUp p{
+  font-size: 15px;
+  font-weight: 700;
+  
+}
+.signUp h2{
+  font-size: 15px;
+  font-weight: 400;
+  margin-right: -10px;
+}
+.signUp button{
+  width: 360px;
+  height: 50px;
+  margin-top: 35px;
+  margin-left: 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  border: 1px solid rgba(0, 0, 0, 0);
+  color: #fff;
+  background-color: hsl(235, 18%, 26%);
+}
+.signUp button:hover{
+  background: linear-gradient(to right, rgb(255, 87, 115), rgb(255, 129, 79));
+  box-shadow: 0 0 10px rgba(255, 87, 115, 0.5), 0 0 20px rgba(255, 129, 79, 0.5);
+  filter: brightness(110%);
+  transition: 0.1s ease-out;
+}
+.sub button:hover{
+  background: linear-gradient(to right, rgb(255, 87, 115), rgb(255, 129, 79));
+  box-shadow: 0 0 10px rgba(255, 87, 115, 0.5), 0 0 20px rgba(255, 129, 79, 0.5);
+  filter: brightness(110%); 
+  transition: 0.1s ease-out;
+  border: none;
+}
+form {
+  width: 100%;
+  position: relative;
+}
+.sub.disabled-hover:hover {
+  background: hsl(235, 18%, 26%)!important;
+  box-shadow: none !important;
+  cursor: not-allowed;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+  .containerBlock{
+    margin-left: 6%;
+    margin-top: 15%;
+    padding: 30px;
+  } 
+  .signUp{
+    left: 255px;
+    top: 300px;
+    width: 500px;
+    padding: 50px 0px 50px 50px;
+  }
+}
+
+
+@media only screen and (max-width: 768px){
+  .containerBlock{
+    max-width:650px;
+    margin-left: 6%;
+    padding: 20px;
+}
+.stay-updated h1{
+  font-size: 40px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.stay-updated p{
+  margin-left: 15px;
+  margin-right: 4px;
+}
+.right img{
+width: 290px;
+margin-top: 10px;
+}
+.ol{
+  font-size: 13px;
+  margin-left: 15px;
+}
+.ol img{
+  width: 18px;
+  height: 18px;
+  margin-top: 17px;
+}
+.ol p{
+  margin-left: 25px;
+  margin-top: 20px;
+}
+.email{
+  margin-left: 15px;
+  margin-top: 35px; 
+}
+#emailError h1{
+  margin-left: 165px;
+}
+.email input{
+width: 280px;
+}
+.sub button{
+  width: 280px;
+  margin-top: 15px;
+  margin-left: 15px;
+  }
+  .signUp{
+    left: 135px;
+  }
+}
+
+
+@media only screen and (max-width: 425px){
+
+  body{
+    font-family: "Roboto", sans-serif;
+    background-color: hsl(234, 29%, 20%);
+    width: 425px;
+  }
+
+  .containerBlock{
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 0%;
+    flex-direction: column;
+    border-radius: 0px;
+    padding: 0px;
+    height: 100%;
+    padding-bottom: 460px;
+} 
+.mobImg{
+  width: 425px;
+}
+.mobImg img{
+  display: block;
+  width: 425px;
+}
+.right img{
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.stay-updated h1{
+  font-size: 45px;
+  margin-top: 20px;
+  text-align: center;
+}
+.stay-updated p{
+  margin: 0;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 20px;
+}
+.ol{
+  font-size: 18px;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.ol img{
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+.ol p{
+  margin-left: 25px;
+  margin-top: 15px;
+}
+
+.email{
+  margin-left: 15px;
+  margin-top: 35px;
+}
+.email p{
+  font-size: 12px;
+  font-weight: 700;
+}
+#emailError h1{
+  font-size: 12px;
+  font-weight: 700; 
+  margin-left: 165px;
+  margin-top: -15px;
+  color: red;
+  
+}
+#emailError{
+  display: none;
+  margin-left: 105px;
+}
+.email input{
+margin-top: 15px;
+width: 390px;
+padding-left: 20px;
+}
+.sub button{
+  width: 390px;
+  margin-top: 20px;
+  margin-left: 15px;
+  }
+  .wrapper{
+    margin: 0 auto;
+  }
+  .signUp{
+    left: 0px;
+    top: 0px;
+    width: 425px;
+    padding: 180px 30px 670px 30px;
+    border-radius: 0px;
+  }
+  .signUp h1{
+    margin-top: 30px;
+    font-size: 40px;
+  }
+  .signUp p{
+    font-size: 17px;
+    
+  }
+  .signUp h2{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  .signUp button{
+    width: 360px;
+    height: 50px;
+    margin-top: 35px;
+    margin-left: 0px;
+  }
+}
